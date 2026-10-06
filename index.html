@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>حل ملف الفيزياء</title>
+<style>
+  body { font-family: 'Traditional Arabic', 'Arial', sans-serif; background: #d9d9d9; margin: 0; padding: 20px; line-height: 2; font-size: 17px; }
+  .page { background: #fff; max-width: 900px; margin: 20px auto; padding: 50px 60px; box-shadow: 0 0 12px rgba(0,0,0,0.25); border: 2px solid #333; }
+  .page-num { text-align: left; color: #222; font-size: 16px; margin-bottom: 15px; font-weight: bold; }
+  .header-title { text-align: center; font-size: 40px; font-weight: bold; border: 3px solid #222; padding: 15px 30px; border-radius: 15px; display: inline-block; width: 90%; margin: 10px 0 20px 0; }
+  .sub-title { text-align: center; font-size: 32px; font-weight: bold; border: 3px solid #222; padding: 12px 40px; border-radius: 15px; display: inline-block; width: 70%; margin: 15px 0 30px 0; }
+  .center { text-align: center; }
+  h2 { font-size: 22px; margin-top: 30px; font-weight: bold; }
+  mark { background-color: yellow; font-weight: bold; padding: 0 3px; }
+  table { border-collapse: collapse; width: 100%; margin: 15px 0; background: #fff; }
+  th, td { border: 1.5px solid #222; padding: 10px; text-align: right; vertical-align: middle; font-size: 16px; }
+  th { background: #e8e8e8; font-weight: bold; text-align: center; }
+  .num-col { text-align: center; width: 40px; font-weight: bold; }
+  .q-line { margin: 14px 0; padding: 4px 0; font-size: 16px; }
+  .q-num { font-weight: bold; color: #000; }
+  .opts-line { margin: 4px 20px; font-size: 16px; }
+  ol, ul { padding-right: 30px; }
+  li { margin-bottom: 8px; }
+  .formula-line { direction: ltr; text-align: left; margin: 4px 0 4px 30px; font-size: 16px; }
+  .ans-line { margin: 8px 0; }
+  .cover { text-align: center; padding: 80px 40px; }
+  .cover .info-box { border: 3px solid #222; border-radius: 20px; padding: 40px 30px; margin-top: 100px; font-size: 22px; text-align: right; max-width: 550px; margin-left: auto; margin-right: auto; line-height: 2.5; }
+</style>
+</head>
+<body>
+
+<!-- ============ الغلاف ============ -->
+<div class="page cover">
+  <div class="header-title" style="font-size: 70px; padding: 25px; width: 60%;">فيزياء ٢</div>
+  <br><br>
+  <div class="sub-title">ملف إنجاز الطالب</div>
+  <div class="info-box">
+    اسم الطالب/ ............................................................<br><br>
+    الصف / ............................................................
+  </div>
+</div>
+
+<!-- ============ الصفحة 2 ============ -->
+<div class="page">
+  <div class="page-num">١</div>
+  <div class="center">
+    <div class="header-title">ورقة عمل رقم (١)</div><br>
+    <div class="header-title" style="font-size: 32px; padding: 10px 60px;">الجـــاذبيـــة</div>
+  </div>
+  <p class="center">اسم الطالب/ ........................................ &nbsp;&nbsp;&nbsp;&nbsp; الصف/ ........................................</p>
+
+  <h2>السؤال الأول: أكتب المصطلح العلمي المناسب:</h2>
+  <table>
+    <tr><th>م</th><th>التعريف</th><th>المصطلح</th></tr>
+    <tr><td class="num-col">١</td><td>الكواكب تتحرك في مدارات إهليلجية وتكون الشمس في إحدى البؤرتين</td><td><mark>قانون كبلر الأول</mark></td></tr>
+    <tr><td class="num-col">٢</td><td>الخط الوهمي من الشمس إلى الكواكب يمسح مساحات متساوية في أزمنة متساوية</td><td><mark>قانون كبلر الثاني</mark></td></tr>
+    <tr><td class="num-col">٣</td><td>هي نسبة مقدار القوة المحصلة المؤثرة في جسم ما إلى مقدار تسارعه</td><td><mark>الكتلة القصورية</mark></td></tr>
+    <tr><td class="num-col">٤</td><td>هي مقدار قوة الجاذبية بين جسمين</td><td><mark>قوة الجذب الكوني</mark></td></tr>
+    <tr><td class="num-col">٥</td><td>أن تتناسب قوة التجاذب بين أي جسمين مع كتل هذه الأجسام</td><td><mark>قانون الجذب الكوني</mark></td></tr>
+    <tr><td class="num-col">٦</td><td>مقياس للممانعة أو مقاومة الجسم لأي نوع من القوى</td><td><mark>الكتلة القصورية</mark></td></tr>
+    <tr><td class="num-col">٧</td><td>الزمن اللازم للمذنب ليكمل دورة واحدة</td><td><mark>الزمن الدوري</mark></td></tr>
+    <tr><td class="num-col">٨</td><td>مربع النسبة بين زمنين دوريين لكوكبين يساوي مكعب النسبة بين متوسطي بعديهما عن الشمس</td><td><mark>قانون كبلر الثالث</mark></td></tr>
+    <tr><td class="num-col">٩</td><td>الأجسام التي تجذب أجساماً أخرى بقوة تتناسب طردياً مع حاصل ضرب كتلتها وعكسياً مع مربع المسافة بين مراكزها</td><td><mark>قانون الجذب الكوني</mark></td></tr>
+    <tr><td class="num-col">١٠</td><td>قوة جذب الأرض للجسم</td><td><mark>الوزن</mark></td></tr>
+    <tr><td class="num-col">١١</td><td>حالة يكون فيها الوزن الظاهري للجسم صفراً</td><td><mark>انعدام الوزن</mark></td></tr>
+  </table>
+
+  <h2>السؤال الثاني: أختر الإجابة الصحيحة وضع حولها دائرة:</h2>
+
+  <div class="q-line"><span class="q-num">١</span> ما وحدة قياس ثابت الجذب الكوني G؟<br>
+    <span class="opts-line">أ- N/kg &nbsp;&nbsp; ب- m/s² &nbsp;&nbsp; ج- <mark>N.m²/kg²</mark> &nbsp;&nbsp; د- kg.m/s</span></div>
+
+  <div class="q-line"><span class="q-num">٢</span> الزمن الدوري للمذنب هال-بوب هو:<br>
+    <span class="opts-line">أ- 76 سنة &nbsp;&nbsp; ب- <mark>2400 سنة</mark> &nbsp;&nbsp; ج- 365 يوماً &nbsp;&nbsp; د- 100 سنة</span></div>
+
+  <div class="q-line"><span class="q-num">٣</span> إذا بدأت الأرض في الانكماش مع بقاء كتلتها ثابتة، فإن تسارع الجاذبية على سطحها:<br>
+    <span class="opts-line">أ- <mark>يزيد</mark> &nbsp;&nbsp; ب- يقل &nbsp;&nbsp; ج- يبقى ثابتاً &nbsp;&nbsp; د- ينعدم</span></div>
+
+  <div class="q-line"><span class="q-num">٤</span> إذا تضاعفت كتلة أحد الجسمين في قانون الجذب الكوني، فإن القوة:<br>
+    <span class="opts-line">أ- تبقى كما هي &nbsp;&nbsp; ب- تقل للنصف &nbsp;&nbsp; ج- <mark>تتضاعف</mark> &nbsp;&nbsp; د- تنعدم</span></div>
+
+  <div class="q-line"><span class="q-num">٥</span> ما الذي يميز المدار الذي يدور فيه القمر الاصطناعي حول الأرض؟<br>
+    <span class="opts-line">أ- حركة عشوائية &nbsp;&nbsp; ب- <mark>حركة دائرية منتظمة</mark> &nbsp;&nbsp; ج- حركة إهليلجية غير منتظمة &nbsp;&nbsp; د- حركة رأسية</span></div>
+
+  <div class="q-line"><span class="q-num">٦</span> ما الذي يحدد الزمن الدوري للقمر الاصطناعي؟<br>
+    <span class="opts-line">أ- كتلته فقط &nbsp;&nbsp; ب- <mark>بعده عن مركز الأرض</mark> &nbsp;&nbsp; ج- سرعة دوران الأرض &nbsp;&nbsp; د- شكله فقط</span></div>
+</div>
+
+<!-- ============ الصفحة 3 ============ -->
+<div class="page">
+  <div class="page-num">٧</div>
+
+  <div class="q-line"><span class="q-num">٧</span> ما الذي يحدث للقذيفة إذا أطلقت بسرعة أقل من السرعة المدارية؟<br>
+    <span class="opts-line">أ- تبقى معلقة في الهواء &nbsp;&nbsp; ب- <mark>تسقط على الأرض</mark> &nbsp;&nbsp; ج- تخرج من الغلاف &nbsp;&nbsp; د- تدور حول الأرض</span></div>
+
+  <div class="q-line"><span class="q-num">٨</span> ما اسم القمر الاصطناعي الذي يستخدم في رسم الخرائط ودراسة الأرض؟<br>
+    <span class="opts-line">أ- هابل &nbsp;&nbsp; ب- <mark>لاندسات</mark> &nbsp;&nbsp; ج- كاسيني &nbsp;&nbsp; د- هال-بوب</span></div>
+
+  <div class="q-line"><span class="q-num">٩</span> ينص القانون الثاني لكبلر على أن الكواكب:<br>
+    <span class="opts-line">أ- تتحرك بسرعة ثابتة &nbsp;&nbsp; ب- <mark>تمسح مساحات متساوية في أزمنة متساوية</mark> &nbsp;&nbsp; ج- تدور حول الأرض &nbsp;&nbsp; د- تتباطأ عند الاقتراب من الشمس</span></div>
+
+  <div class="q-line"><span class="q-num">١٠</span> ما نوع المدار الذي تدور فيه الكواكب حول الشمس حسب كبلر؟<br>
+    <span class="opts-line">أ- دائري &nbsp;&nbsp; ب- <mark>إهليلجي</mark> &nbsp;&nbsp; ج- مكافئ &nbsp;&nbsp; د- حلزوني</span></div>
+
+  <div class="q-line"><span class="q-num">١١</span> كلما اقترب الكوكب من الشمس أثناء دورانها فإن مقدار سرعته:<br>
+    <span class="opts-line">أ- <mark>تزيد</mark> &nbsp;&nbsp; ب- تبقى ثابتة &nbsp;&nbsp; ج- تقل &nbsp;&nbsp; د- لا يمكن التنبؤ بها</span></div>
+
+  <div class="q-line"><span class="q-num">١٢</span> كلما زاد نصف قطر الاصطناعي حول الأرض فإن زمنه الدوري:<br>
+    <span class="opts-line">أ- <mark>تزيد</mark> &nbsp;&nbsp; ب- تبقى ثابتة &nbsp;&nbsp; ج- تقل &nbsp;&nbsp; د- لا يمكن التنبؤ بها</span></div>
+
+  <div class="q-line"><span class="q-num">١٣</span> يستعمل لحساب كتلة القصور لجسم ما:<br>
+    <span class="opts-line">أ- الميزان ذو الكفين &nbsp;&nbsp; ب- قانون نيوتن الثالث &nbsp;&nbsp; ج- <mark>ميزان القصور</mark> &nbsp;&nbsp; د- جميع ما سبق</span></div>
+
+  <div class="q-line"><span class="q-num">١٤</span> تستخدم تجربة كافندش في قياس:<br>
+    <span class="opts-line">أ- حساب كتلة الأرض &nbsp;&nbsp; ب- حساب قوة الجاذبية بين جسمين &nbsp;&nbsp; ج- <mark>جميع ما سبق</mark> &nbsp;&nbsp; د- حساب كتلة الشمس</span></div>
+
+  <div class="q-line"><span class="q-num">١٥</span> أي قانون من قوانين كبلر يربط بين زمن الدورة ومقدار نصف القطر؟<br>
+    <span class="opts-line">أ- الأول &nbsp;&nbsp; ب- الثاني &nbsp;&nbsp; ج- <mark>الثالث</mark> &nbsp;&nbsp; د- قانون نيوتن الثاني</span></div>
+
+  <div class="q-line"><span class="q-num">١٦</span> ما العامل الذي لا يؤثر في قوة الجذب الكوني بين جسمين؟<br>
+    <span class="opts-line">أ- كتل الجسمين &nbsp;&nbsp; ب- المسافة بينهما &nbsp;&nbsp; ج- <mark>شكلهما</mark> &nbsp;&nbsp; د- ثابت الجذب الكوني</span></div>
+
+  <div class="q-line"><span class="q-num">١٧</span> ما رمز ثابت الجذب الكوني؟<br>
+    <span class="opts-line">أ- g &nbsp;&nbsp; ب- <mark>G</mark> &nbsp;&nbsp; ج- k &nbsp;&nbsp; د- F</span></div>
+
+  <div class="q-line"><span class="q-num">١٨</span> تسارع الجاذبية على سطح القمر أقل من الأرض بسبب:<br>
+    <span class="opts-line">أ- كبر حجم القمر &nbsp;&nbsp; ب- <mark>صغر كتلة القمر</mark> &nbsp;&nbsp; ج- بعد القمر عن الأرض &nbsp;&nbsp; د- سرعة دوران القمر</span></div>
+
+  <div class="q-line"><span class="q-num">١٩</span> مجال الجاذبية يُعبر عنه بوحدة:<br>
+    <span class="opts-line">أ- N &nbsp;&nbsp; ب- Kg.m &nbsp;&nbsp; ج- m/s &nbsp;&nbsp; د- <mark>N/kg</mark></span></div>
+
+  <div class="q-line"><span class="q-num">٢٠</span> الكتلة الجاذبية تُستخدم في حساب:<br>
+    <span class="opts-line">أ- التسارع &nbsp;&nbsp; ب- <mark>الوزن</mark> &nbsp;&nbsp; ج- السرعة</span></div>
+
+  <div class="q-line"><span class="q-num">٢١</span> الكتلة القصورية تُستخدم في قانون:<br>
+    <span class="opts-line">أ- كبلر &nbsp;&nbsp; ب- <mark>نيوتن الثاني</mark> &nbsp;&nbsp; ج- الجذب الكوني</span></div>
+
+  <div class="q-line"><span class="q-num">٢٢</span> ما السبب الرئيسي لانعدام الوزن داخل محطة فضائية؟<br>
+    <span class="opts-line">أ- عدم وجود جاذبية &nbsp;&nbsp; ب- <mark>سقوط حر مستمر</mark></span></div>
+
+  <div class="q-line"><span class="q-num">٢٣</span> مجال الجاذبية الأرضية يساوي تقريباً:<br>
+    <span class="opts-line">أ- 6.67 × 10⁻¹¹ N/kg &nbsp;&nbsp; ب- <mark>9.8 N/kg</mark> &nbsp;&nbsp; ج- 1.5 N/kg</span></div>
+
+  <div class="q-line"><span class="q-num">٢٤</span> أي مما يلي يُعد مثالاً على انعدام الوزن؟<br>
+    <span class="opts-line"><mark>رائد فضاء داخل محطة فضائية في مدار حول الأرض، أو جسم في حالة سقوط حر.</mark></span></div>
+</div>
+
+<!-- ============ الصفحة 4 ============ -->
+<div class="page">
+  <div class="page-num">٤٢</div>
+
+  <h2>السؤال الثالث: ضع علامة (√) أمام العبارة الصحيحة وعلامة (X) أمام العبارة الخاطئة فيما يلي:</h2>
+  <ol>
+    <li>لا يمكن استخدام قانون الجذب الكوني لحساب كتلة الأرض. → <mark>X</mark></li>
+    <li>كتلة القصور تحدد مدى تأثر الجسم بالجاذبية. → <mark>X</mark></li>
+    <li>المدار المتزامن مع الأرض يعني أن القمر الاصطناعي يدور دورة كاملة كل يوم. → <mark>√</mark></li>
+    <li>إذا تضاعفت المسافة بين جسمين، فإن قوة الجاذبية بينهما تزداد. → <mark>X</mark></li>
+    <li>في تجربة كافندش، تم قياس قوة الجاذبية بين الكرات باستخدام زاوية دوران الذراع. → <mark>√</mark></li>
+    <li>الوزن هو نفسه الكتلة، ولا يتغير بتغير المكان. → <mark>X</mark></li>
+    <li>في السقوط الحر، تتسارع الأجسام الثقيلة أسرع من الخفيفة. → <mark>X</mark></li>
+    <li>مبدأ التكافؤ ينص على أن تأثير كتلة القصور وكتلة الجاذبية لا يمكن تمييزه في حالة السقوط الحر. → <mark>√</mark></li>
+    <li>كتلة الجاذبية ليس لها علاقة بقوة الجذب بين الجسم. → <mark>X</mark></li>
+    <li>كتلة القصور هي التي تحدد مقدار مقاومة الجسم لتغير حالته الحركية. → <mark>√</mark></li>
+    <li>المذنبات تدور في مدارات إهليلجية حول الشمس مثل الكواكب. → <mark>√</mark></li>
+    <li>كلما اقترب الكوكب من الشمس، زادت سرعته المدارية. → <mark>√</mark></li>
+    <li>قانون نيوتن للجذب الكوني لا ينطبق إلا على الكواكب والنجوم. → <mark>X</mark></li>
+    <li>تجربة كافندش ساعدت على قياس كتلة الأرض بدقة. → <mark>√</mark></li>
+    <li>قوة الجاذبية بين جسمين تعتمد فقط على المسافة بينهما. → <mark>X</mark></li>
+    <li>يمكن استخدام قانون الجذب الكوني لحساب وزن جسم على سطح الأرض. → <mark>√</mark></li>
+    <li>إذا زادت كتلة الشمس، فإن الزمن الدوري للكواكب سيزداد. → <mark>X</mark></li>
+    <li>القمر الاصطناعي في مدار ثابت حول الأرض لا يتأثر بالجاذبية. → <mark>X</mark></li>
+  </ol>
+
+  <h2>السؤال الرابع: أكمل الفراغات بالمصطلح العلمي المناسب:</h2>
+  <ol>
+    <li>ينص القانون الأول لكبلر على أن مدارات الكواكب <mark>إهليلجية</mark> وتكون الشمس في <mark>إحدى البؤرتين</mark>.</li>
+    <li>يتحرك الكوكب بأقصى سرعة عندما يكون <mark>أقرب</mark> من الشمس، ويتحرك أيضاً عندما يكون <mark>أبعد</mark> عنها.</li>
+    <li>ينص القانون الثاني لكبلر على أن الخط الوهمي من الشمس إلى الكوكب يمسح <mark>مساحات متساوية</mark> في <mark>أزمنة متساوية</mark>.</li>
+    <li>ينص القانون الثالث لكبلر على أن مربع الزمن الدوري يتناسب طردياً مع <mark>مكعب نصف قطر المدار</mark> بين الكوكب والشمس.</li>
+    <li>تجربة كافندش ساعدت على قياس <mark>قوة الجاذبية</mark> بين جسمين، وتحديد قيمة <mark>ثابت الجذب الكوني G</mark>.</li>
+    <li>قانون نيوتن للجذب الكوني ينص على أن الأجسام تجذب بعضها بقوة تتناسب طردياً مع <mark>حاصل ضرب كتلتهما</mark> وعكسياً مع <mark>مربع المسافة بين مركزيهما</mark>.</li>
+    <li>في حالة السقوط الحر، لا يمكن التمييز بين تأثير <mark>كتلة القصور</mark> و <mark>كتلة الجاذبية</mark>.</li>
+    <li>المدار المتزامن مع الأرض يعني أن القمر الاصطناعي يدور دورة كاملة كل <mark>يوم (24 ساعة)</mark>.</li>
+    <li>كلما زادت كتلة أحد الجسمين، فإن قوة الجاذبية بينهما <mark>تزداد</mark>.</li>
+    <li>إذا تضاعفت المسافة بين جسمين، فإن قوة الجاذبية بينهما تقل إلى <mark>الربع (1/4)</mark>.</li>
+    <li>الكتلة الجاذبية تُستخدم في حساب قوة <mark>الجذب</mark> بين جسمين.</li>
+    <li>يحدث انعدام الوزن عندما يكون الجسم في حالة <mark>سقوط</mark> حر.</li>
+    <li>العلاقة بين الوزن والمجال الجاذبي هي: الوزن = المجال × <mark>الكتلة</mark>.</li>
+  </ol>
+</div>
+
+<!-- ============ الصفحة 5 ============ -->
+<div class="page">
+  <div class="page-num">١٤</div>
+
+  <ol start="14">
+    <li>في حالة انعدام الوزن، يشعر الجسم وكأنه <mark>يطفو</mark>.</li>
+    <li>تسارع الجاذبية على سطح الأرض يساوي <mark>9.8</mark> m/s².</li>
+    <li>الكتلة القصور تُستخدم في قانون نيوتن الثاني الذي ينص على أن القوة = الكتلة × <mark>التسارع</mark>.</li>
+    <li>تسارع الجاذبية يختلف حسب <mark>كتلة</mark> الكوكب.</li>
+    <li>ثابت الجذب الكوني هو <mark>6.67 × 10⁻¹¹ N·m²/kg²</mark>.</li>
+  </ol>
+
+  <h2>السؤال الخامس:</h2>
+  <p>ما قوة الجاذبية بين جسمين كتلة كل منهما 1.5 kg والمسافة بين مركزيهما 35 cm؟</p>
+  <p class="formula-line">F = G (m₁ m₂) / r²</p>
+  <p class="formula-line">F = 6.67 × 10⁻¹¹ × (1.5 × 1.5) / (0.35)²</p>
+  <p class="formula-line">F = 6.67 × 10⁻¹¹ × 2.25 / 0.1225</p>
+  <p class="formula-line">F ≈ 1.23 × 10⁻⁹ N</p>
+  <p class="ans-line">الإجابة: قوة الجاذبية بين الجسمين تساوي تقريباً <mark>1.23 × 10⁻⁹ نيوتن</mark>.</p>
+
+  <h2>السؤال السادس:</h2>
+  <p>كتاب كتلته 1.25 kg ووزنه في الفضاء 8.35 N. ما قيمة المجال الجاذبي في ذلك المكان؟</p>
+  <p class="formula-line">F = m g &nbsp;&nbsp; ⇒ &nbsp;&nbsp; g = F / m</p>
+  <p class="formula-line">g = 8.35 / 1.25 = 6.68 N/kg</p>
+  <p class="ans-line">الإجابة: قيمة المجال الجاذبي = <mark>6.68 N/kg</mark>.</p>
+
+  <h2>السؤال السابع:</h2>
+  <p>كتلة القمر 7.3 × 10²² kg ونصف قطره 1785 km، ما شدة مجال الجاذبية على سطحه؟</p>
+  <p class="formula-line">g = G M / r²</p>
+  <p class="formula-line">M = 7.3 × 10²² kg &nbsp;&nbsp;&nbsp; r = 1785 km = 1.785 × 10⁶ m</p>
+  <p class="formula-line">g = (6.67 × 10⁻¹¹ × 7.3 × 10²²) / (1.785 × 10⁶)²</p>
+  <p class="formula-line">g ≈ 1.53 m/s²</p>
+  <p class="ans-line">الإجابة: شدة مجال الجاذبية على سطح القمر تساوي تقريباً <mark>1.53 m/s²</mark>.</p>
+</div>
+
+<!-- ============ الصفحة 6 ============ -->
+<div class="page">
+  <div class="page-num">١٠</div>
+  <div class="center">
+    <div class="header-title">ورقة عمل رقم (٢)</div><br>
+    <div class="header-title" style="font-size: 34px; padding: 10px 60px;">الـــراديان</div>
+  </div>
+  <p class="center">اسم الطالب/ ........................................ &nbsp;&nbsp;&nbsp;&nbsp; الصف/ ........................................</p>
+
+  <h2>السؤال الأول: أكتب المصطلح العلمي المناسب:</h2>
+  <table>
+    <tr><th>م</th><th>التعريف</th><th>المصطلح</th></tr>
+    <tr><td class="num-col">١</td><td>التغير في الزاوية أثناء دوران الجسم</td><td><mark>الإزاحة الزاوية</mark></td></tr>
+    <tr><td class="num-col">٢</td><td>الإزاحة الزاوية مقسوماً على الزمن الذي يتطلبه حدوثها</td><td><mark>السرعة الزاوية المتجهة</mark></td></tr>
+    <tr><td class="num-col">٣</td><td>التغير في السرعة الزاوية مقسوماً على الفترة الزمنية التي حدث خلالها هذا التغير</td><td><mark>التسارع الزاوي</mark></td></tr>
+    <tr><td class="num-col">٤</td><td>مقياس فاعلية القوة في إحداث الدوران</td><td><mark>العزم</mark></td></tr>
+    <tr><td class="num-col">٥</td><td>المسافة العمودية من محور الدوران إلى نقطة تأثير القوة</td><td><mark>ذراع القوة</mark></td></tr>
+    <tr><td class="num-col">٦</td><td>عدد الدورات الكاملة التي يدورها الجسم في الثانية الواحدة</td><td><mark>التردد</mark></td></tr>
+    <tr><td class="num-col">٧</td><td>المسافة بين الجسم تتحرك بالطريقة نفسها التي تتحرك بها النقطة المادية</td><td><mark>السرعة الخطية</mark></td></tr>
+    <tr><td class="num-col">٨</td><td>قوة ظاهرية غير حقيقية نشعر بها تظهر وكأنها تدفع الجسم للخارج</td><td><mark>قوة الطرد المركزي</mark></td></tr>
+    <tr><td class="num-col">٩</td><td>تسارع ناشئ عن الحركة الدائرية واتجاهه نحو المركز</td><td><mark>التسارع المركزي</mark></td></tr>
+    <tr><td class="num-col">١٠</td><td>يُطلق على وحدة قياس الزوايا في الفيزياء وتستخدم بدلاً من الدرجة</td><td><mark>الراديان</mark></td></tr>
+    <tr><td class="num-col">١١</td><td>يُعبر عن مقدار دوران الجسم حول محور معين خلال فترة زمنية</td><td><mark>السرعة الزاوية</mark></td></tr>
+    <tr><td class="num-col">١٢</td><td>يُطلق على التغير في السرعة الزاوية خلال فترة زمنية</td><td><mark>التسارع الزاوي</mark></td></tr>
+    <tr><td class="num-col">١٣</td><td>يُعبر عن قدرة القوة على إحداث دوران حول محور</td><td><mark>العزم</mark></td></tr>
+    <tr><td class="num-col">١٤</td><td>يُطلق على المسافة العمودية من محور الدوران إلى نقطة تأثير القوة</td><td><mark>ذراع القوة</mark></td></tr>
+    <tr><td class="num-col">١٥</td><td>يُستخدم لوصف الحالة التي تكون فيها محصلة العزوم المؤثرة على جسم تساوي صفراً</td><td><mark>الاتزان الدوراني</mark></td></tr>
+    <tr><td class="num-col">١٦</td><td>يُطلق على القوة الظاهرة التي تدفع الجسم بعيداً عن مركز الدوران</td><td><mark>قوة الطرد المركزي</mark></td></tr>
+    <tr><td class="num-col">١٧</td><td>يُطلق على القوة الناتجة عن دوران الأرض وتؤثر على حركة الأجسام</td><td><mark>قوة كوريوليس</mark></td></tr>
+    <tr><td class="num-col">١٨</td><td>يُطلق على الزاوية التي يقطعها الجسم أثناء الدوران حول محور معين</td><td><mark>الإزاحة الزاوية</mark></td></tr>
+  </table>
+
+  <h2>السؤال الثاني: أختر الإجابة الصحيحة وضع حولها دائرة:</h2>
+
+  <div class="q-line"><span class="q-num">١</span> لكي يكون الجسم في حالة اتزان دوراني، يجب أن:<br>
+    <span class="opts-line">أ- تكون القوى المؤثرة متساوية &nbsp;&nbsp; ب- تكون السرعة الزاوية صفراً &nbsp;&nbsp; ج- <mark>تكون محصلة العزوم صفراً</mark> &nbsp;&nbsp; د- مركز كتلته فوق قاعدته</span></div>
+
+  <div class="q-line"><span class="q-num">٢</span> الإزاحة الزاوية تقاس بوحدة:<br>
+    <span class="opts-line">أ- متر &nbsp;&nbsp; ب- نيوتن &nbsp;&nbsp; ج- <mark>راديان</mark> &nbsp;&nbsp; د- ثانية</span></div>
+
+  <div class="q-line"><span class="q-num">٣</span> إذا دارت الأرض دورة كاملة حول محورها، فإن الإزاحة الزاوية تساوي:<br>
+    <span class="opts-line">أ- 1 rad &nbsp;&nbsp; ب- <mark>2π rad</mark> &nbsp;&nbsp; ج- 360° &nbsp;&nbsp; د- 180°</span></div>
+
+  <div class="q-line"><span class="q-num">٤</span> السرعة الزاوية المتجهة تساوي:<br>
+    <span class="opts-line">أ- القوة المؤثرة × الزمن &nbsp;&nbsp; ب- <mark>الإزاحة الزاوية ÷ الزمن</mark> &nbsp;&nbsp; ج- نصف القطر × الزمن &nbsp;&nbsp; د- العزم ÷ الكتلة</span></div>
+
+  <div class="q-line"><span class="q-num">٥</span> وحدة قياس التسارع الزاوي هي:<br>
+    <span class="opts-line">أ- N.m &nbsp;&nbsp; ب- rad/s &nbsp;&nbsp; ج- <mark>rad/s²</mark> &nbsp;&nbsp; د- m/s</span></div>
+</div>
+
+<!-- ============ الصفحة 7 ============ -->
+<div class="page">
+  <div class="page-num">٦</div>
+
+  <div class="q-line"><span class="q-num">٦</span> العزم يساوي حاصل ضرب:<br>
+    <span class="opts-line">أ- القوة × الزمن &nbsp;&nbsp; ب- <mark>القوة × ذراع القوة</mark> &nbsp;&nbsp; ج- الكتلة × التسارع &nbsp;&nbsp; د- السرعة × نصف القطر</span></div>
+
+  <div class="q-line"><span class="q-num">٧</span> إذا أثرت بقوة مقدارها 50 N على مفتاح شد طوله 3 m بزاوية قائمة، فإن العزم الناتج يساوي:<br>
+    <span class="opts-line">أ- 15 N.m &nbsp;&nbsp; ب- <mark>150 N.m</mark> &nbsp;&nbsp; ج- 0.6 N.m &nbsp;&nbsp; د- 1.5 N.m</span></div>
+
+  <div class="q-line"><span class="q-num">٨</span> عندما يدور الجسم مع عقارب الساعة فإن الإزاحة الزاوية:<br>
+    <span class="opts-line">أ- تقل &nbsp;&nbsp; ب- تزيد &nbsp;&nbsp; ج- تكون موجبة &nbsp;&nbsp; د- <mark>تكون سالبة</mark></span></div>
+
+  <div class="q-line"><span class="q-num">٩</span> مضى من الزمن الآن 10 min على ساعة الحائط ما مقدار الإزاحة الزاوية لعقرب الثواني:<br>
+    <span class="opts-line">أ- <mark>200π rad</mark> &nbsp;&nbsp; ب- 2π rad &nbsp;&nbsp; ج- 5π rad &nbsp;&nbsp; د- 10π rad</span></div>
+
+  <div class="q-line"><span class="q-num">١٠</span> قوة الطرد المركزي تكون:<br>
+    <span class="opts-line">أ- حقيقية &nbsp;&nbsp; ب- <mark>وهمية</mark> &nbsp;&nbsp; ج- ناتجة عن الاحتكاك &nbsp;&nbsp; د- ناتجة عن الجاذبية</span></div>
+
+  <div class="q-line"><span class="q-num">١١</span> في تجربة الاتزان، إذا زادت الكتلة على أحد جانبي المسطرة، فإن:<br>
+    <span class="opts-line">أ- المسطرة تبقى متزنة &nbsp;&nbsp; ب- <mark>المسطرة تدور نحو الكتلة</mark> &nbsp;&nbsp; ج- لا يحدث شيء</span></div>
+
+  <div class="q-line"><span class="q-num">١٢</span> إذا كانت الإزاحة الزاوية موجبة، فإن اتجاه الدوران يكون:<br>
+    <span class="opts-line">أ- مع عقارب الساعة &nbsp;&nbsp; ب- <mark>عكس عقارب الساعة</mark> &nbsp;&nbsp; ج- رأسي &nbsp;&nbsp; د- غير محدد</span></div>
+
+  <div class="q-line"><span class="q-num">١٣</span> قوة كوريوليس تؤدي إلى انحراف الأجسام المتحركة نحو:<br>
+    <span class="opts-line">أ- الشرق فقط &nbsp;&nbsp; ب- الغرب فقط &nbsp;&nbsp; ج- <mark>اليمين أو اليسار</mark></span></div>
+
+  <div class="q-line"><span class="q-num">١٤</span> إذا زادت السرعة الزاوية لجسم، فإن التسارع الزاوي يكون:<br>
+    <span class="opts-line">أ- صفر &nbsp;&nbsp; ب- سالب &nbsp;&nbsp; ج- <mark>موجب</mark> &nbsp;&nbsp; د- غير معروف</span></div>
+
+  <div class="q-line"><span class="q-num">١٥</span> قوة كوريوليس تؤثر على:<br>
+    <span class="opts-line">أ- الأجسام الساكنة &nbsp;&nbsp; ب- الأجسام المتحركة في خط مستقيم &nbsp;&nbsp; ج- <mark>الأجسام المتحركة على سطح دوار</mark></span></div>
+
+  <h2>السؤال الثالث: ضع علامة (√) أمام العبارة الصحيحة وعلامة (X) أمام العبارة الخاطئة فيما يلي:</h2>
+  <ol>
+    <li>الراديان وحدة قياس زاوية في النظام الدولي. → <mark>√</mark></li>
+    <li>العزم لا يتأثر باتجاه القوة. → <mark>X</mark></li>
+    <li>الاتزان الدوراني يحدث عندما تكون محصلة العزوم صفراً. → <mark>√</mark></li>
+    <li>قوة كوريوليس تؤثر فقط على الأجسام الساكنة. → <mark>X</mark></li>
+    <li>السرعة الزاوية تقاس بوحدة: rad/s. → <mark>√</mark></li>
+    <li>كلما زاد ذراع القوة، قل العزم. → <mark>X</mark></li>
+    <li>قوة الطرد المركزي تظهر في الإطار المرجعي الدوار. → <mark>√</mark></li>
+    <li>العزم يتولد فقط إذا كانت القوة موازية لذراع القوة. → <mark>X</mark></li>
+    <li>الإزاحة الزاوية يمكن أن تكون موجبة أو سالبة. → <mark>√</mark></li>
+    <li>التسارع الزاوي يقيس تغير السرعة الزاوية مع الزمن. → <mark>√</mark></li>
+    <li>قوة كوريوليس تؤثر على الطائرات والسفن. → <mark>√</mark></li>
+    <li>الاتزان لا يعتمد على توزيع الكتل. → <mark>X</mark></li>
+    <li>العزم يقاس بوحدة نيوتن فقط. → <mark>X</mark></li>
+    <li>الراديان يعادل 180 درجة. → <mark>X</mark></li>
+  </ol>
+</div>
+
+<!-- ============ الصفحة 8 ============ -->
+<div class="page">
+  <div class="page-num">١٥</div>
+
+  <h2>السؤال الرابع: أكمل الفراغات بالمصطلح العلمي المناسب:</h2>
+  <ol>
+    <li>الإزاحة الزاوية تقاس بوحدة <mark>الراديان (rad)</mark>.</li>
+    <li>العزم يساوي القوة مضروبة في <mark>ذراع القوة</mark>.</li>
+    <li>في حالة الاتزان الدوراني، تكون محصلة العزوم <mark>صفراً</mark>.</li>
+    <li>السرعة الزاوية المتجهة تساوي الإزاحة الزاوية مقسومة على <mark>الزمن</mark>.</li>
+    <li>التسارع الزاوي يقاس بوحدة <mark>rad/s²</mark>.</li>
+    <li>قوة كوريوليس تؤثر على الأجسام المتحركة في إطار <mark>مرجعي دوار</mark>.</li>
+    <li>العلاقة بين السرعة الخطية والزاوية هي <mark>v = r ω</mark>.</li>
+    <li>الراديان هو زاوية تقطع قوساً طوله يساوي <mark>نصف القطر</mark>.</li>
+    <li>العزم يقاس بوحدة <mark>نيوتن.متر (N·m)</mark>.</li>
+    <li>قوة الطرد المركزي تعتبر قوة <mark>وهمية (ظاهرية)</mark> تظهر في الإطار المرجعي الدوار.</li>
+  </ol>
+
+  <h2>السؤال الخامس:</h2>
+  <p>يدور إطار بحيث تتحرك نقطة عند حافته الخارجية مسافة 1.5 m. وإذا كان نصف قطر الإطار 2.5 m فما مقدار الزاوية (بوحدات radians) التي دارها الإطار؟</p>
+  <p class="formula-line">d = r θ &nbsp;&nbsp; ⇒ &nbsp;&nbsp; θ = d / r</p>
+  <p class="formula-line">θ = 1.5 / 2.5 = 0.6 rad</p>
+  <p class="ans-line">الإجابة: مقدار الزاوية التي دارها الإطار = <mark>0.6 راديان</mark>.</p>
+
+  <h2>السؤال السادس:</h2>
+  <p>إذا كان التسارع الخطي لعربة نقل 1.85 m/s²، والتسارع الزاوي لإطاراتها 5.23 rad/s². فما نصف قطر الإطار الواحد للعربة؟</p>
+  <p class="formula-line">a = r α &nbsp;&nbsp; ⇒ &nbsp;&nbsp; r = a / α</p>
+  <p class="formula-line">r = 1.85 / 5.23 ≈ 0.354 m</p>
+  <p class="ans-line">الإجابة: نصف قطر الإطار ≈ <mark>0.354 متر</mark> (حوالي 35.4 سم).</p>
+
+  <h2>السؤال السابع:</h2>
+  <p>إذا تطلب تدوير جسم عزمًا مقداره 55 N.m، في حين كانت أكبر قوة يمكن التأثير بها 135 N، فما طول ذراع القوة الذي يجب استخدامه؟</p>
+  <p class="formula-line">τ = F r sinθ &nbsp;&nbsp; (θ = 90° ⇒ sinθ = 1)</p>
+  <p class="formula-line">r = τ / F = 55 / 135 ≈ 0.407 m</p>
+  <p class="ans-line">الإجابة: طول ذراع القوة ≈ <mark>0.407 متر</mark> (حوالي 40.7 سم).</p>
+</div>
+
+</body>
+</html>
