@@ -5,30 +5,48 @@
 <title>حل الفيزياء 2</title>
 <style>
   * { box-sizing: border-box; }
-  body { font-family: 'Traditional Arabic', 'Arial', sans-serif; background: #666; margin: 0; padding: 20px; line-height: 1.85; font-size: 16px; color: #111; }
+  body { font-family: 'Traditional Arabic', 'Arial', sans-serif; background: #666; margin: 0; padding: 20px; line-height: 1.9; font-size: 16px; color: #111; }
   .page { background: #fff; width: 210mm; min-height: 297mm; margin: 15px auto; padding: 10mm; position: relative; box-shadow: 0 0 12px rgba(0,0,0,0.6); }
   .frame { border: 3px solid #222; padding: 10mm; min-height: calc(297mm - 20mm); position: relative; }
   .page-num { position: absolute; top: 6mm; right: 12mm; font-size: 18px; font-weight: bold; }
-  mark { background-color: yellow; font-weight: bold; padding: 0 3px; border-radius: 3px; }
   h2 { font-size: 20px; font-weight: bold; margin: 14px 0 8px; }
-  h3 { font-size: 18px; font-weight: bold; margin: 12px 0 6px; }
   table { border-collapse: collapse; width: 100%; margin: 8px 0; }
   th, td { border: 1.5px solid #222; padding: 6px 8px; text-align: right; vertical-align: middle; font-size: 15px; }
   th { background: #eee; font-weight: bold; text-align: center; }
   .num-col { text-align: center; width: 40px; font-weight: bold; }
-  .ans-col { text-align: center; width: 70px; font-weight: bold; }
-  .q { margin: 10px 0; padding: 4px 0; }
+  .ans-col { text-align: center; width: 70px; font-weight: bold; font-size: 17px; }
+  .q { margin: 12px 0; padding: 4px 0; }
   .q-num { font-weight: bold; }
-  .opts { margin: 3px 22px 0 0; }
+  .opts { margin: 6px 22px 0 0; }
   .opts span { display: inline-block; margin-left: 20px; }
+  .circle {
+    display: inline-block;
+    border: 2.5px solid #000;
+    border-radius: 50%;
+    padding: 2px 12px;
+    font-weight: bold;
+    color: #000;
+  }
+  .box-answer {
+    display: inline-block;
+    border: 2.5px solid #000;
+    border-radius: 8px;
+    padding: 2px 10px;
+    font-weight: bold;
+  }
   ol { padding-right: 28px; margin: 8px 0; }
-  ol li { margin-bottom: 6px; }
+  ol li { margin-bottom: 8px; }
   .formula { direction: ltr; text-align: left; margin: 6px 0 6px 20px; font-family: 'Courier New', monospace; font-size: 15px; }
   .box { border: 2px solid #222; padding: 10px 14px; margin: 12px 0; }
-  .box-title { font-weight: bold; margin-bottom: 6px; font-size: 17px; }
-  .center { text-align: center; }
-  .dotted { border-bottom: 1.5px dotted #333; display: inline-block; min-width: 140px; }
-  .long-dotted { border-bottom: 1.5px dotted #333; display: inline-block; min-width: 260px; }
+  .box-title { font-weight: bold; margin-bottom: 6px; font-size: 16px; }
+
+  @media print {
+    body { background: #fff !important; padding: 0 !important; margin: 0 !important; }
+    .page { box-shadow: none !important; margin: 0 !important; page-break-after: always; width: auto; min-height: auto; }
+    .page:last-child { page-break-after: auto; }
+    .frame { border: 3px solid #222 !important; }
+    @page { size: A4; margin: 8mm; }
+  }
 </style>
 </head>
 <body>
@@ -41,51 +59,51 @@
     <h2>السؤال 1: اختر الإجابة الصحيحة:</h2>
 
     <div class="q"><span class="q-num">1.</span> إذا تضاعفت المسافة بين جسمين، فإن قوة الجذب بينهما وفقاً لقانون التربيع العكسي:
-      <div class="opts">أ) تزداد للضعف &nbsp;&nbsp; ب) تقل إلى النصف &nbsp;&nbsp; ج) تزداد أربع مرات &nbsp;&nbsp; د) <mark>تقل إلى الربع</mark></div>
+      <div class="opts">أ) تزداد للضعف &nbsp;&nbsp; ب) تقل إلى النصف &nbsp;&nbsp; ج) تزداد أربع مرات &nbsp;&nbsp; <span class="circle">د) تقل إلى الربع</span></div>
     </div>
 
-    <div class="q"><span class="q-num">2.</span> في حالة الارتداد بين متزلجين بدأ من السكون، كم يساوي الزخم الكلي للنظام بعد الدفع؟
-      <div class="opts">أ) <mark>يساوي صفراً</mark> &nbsp;&nbsp; ب) يساوي كتلة المتزلج الأكبر &nbsp;&nbsp; ج) يساوي مجموع سرعتهما &nbsp;&nbsp; د) قيمة موجبة دائماً</div>
+    <div class="q"><span class="q-num">2.</span> في حالة الارتداد بين متزلجين بدآ من السكون، كم يساوي الزخم الكلي للنظام بعد الدفع؟
+      <div class="opts"><span class="circle">أ) يساوي صفراً</span> &nbsp;&nbsp; ب) يساوي كتلة المتزلج الأكبر &nbsp;&nbsp; ج) يساوي مجموع سرعتهما &nbsp;&nbsp; د) قيمة موجبة دائماً</div>
     </div>
 
     <div class="q"><span class="q-num">3.</span> ما الوحدة المستخدمة لقياس الدفع في النظام الدولي للوحدات؟
-      <div class="opts">أ) N/s &nbsp;&nbsp; ب) kg.m/s² &nbsp;&nbsp; ج) kg.m/s &nbsp;&nbsp; د) <mark>N.s</mark></div>
+      <div class="opts">أ) N/s &nbsp;&nbsp; ب) kg.m/s² &nbsp;&nbsp; ج) kg.m/s &nbsp;&nbsp; <span class="circle">د) N.s</span></div>
     </div>
 
     <div class="q"><span class="q-num">4.</span> ينص القانون الأول لكبلر على أن مدارات الكواكب هي:
-      <div class="opts">أ) دائرية تماماً والشمس في المركز &nbsp;&nbsp; ب) <mark>إهليلجية وتكون الشمس في إحدى البؤرتين</mark> &nbsp;&nbsp; ج) حلزونية تبتعد تدريجياً عن الشمس</div>
+      <div class="opts">أ) دائرية تماماً والشمس في المركز &nbsp;&nbsp; <span class="circle">ب) إهليلجية وتكون الشمس في إحدى البؤرتين</span> &nbsp;&nbsp; ج) حلزونية تبتعد تدريجياً عن الشمس</div>
     </div>
 
     <div class="q"><span class="q-num">5.</span> مقياس لمقدرة القوة على إحداث الدوران هو تعريف ل:
-      <div class="opts">أ) الشغل &nbsp;&nbsp; ب) القدرة &nbsp;&nbsp; ج) <mark>العزم</mark> &nbsp;&nbsp; د) الطاقة الحركية</div>
+      <div class="opts">أ) الشغل &nbsp;&nbsp; ب) القدرة &nbsp;&nbsp; <span class="circle">ج) العزم</span> &nbsp;&nbsp; د) الطاقة الحركية</div>
     </div>
 
     <div class="q"><span class="q-num">6.</span> إذا أثرت قوة مقدارها 20 N بشكل عمودي على باب يبعد مقبضه 0.5 m عن محور الدوران، فإن مقدار العزم يساوي:
-      <div class="opts">أ) <mark>10 N m</mark> &nbsp;&nbsp; ب) 20 N m &nbsp;&nbsp; ج) 40 N m &nbsp;&nbsp; د) 100 N m</div>
+      <div class="opts"><span class="circle">أ) 10 N m</span> &nbsp;&nbsp; ب) 20 N m &nbsp;&nbsp; ج) 40 N m &nbsp;&nbsp; د) 100 N m</div>
     </div>
 
     <div class="q"><span class="q-num">7.</span> ما الشرط اللازم لكي يكون النظام معزولاً؟
-      <div class="opts">أ) أن تكون الكتلة ثابتة &nbsp;&nbsp; ب) أن تكون سرعته ثابتة &nbsp;&nbsp; ج) <mark>أن تكون محصلة القوى الخارجية المؤثرة عليه تساوي صفراً</mark> &nbsp;&nbsp; د) أن تكون الطاقة الحركية محفوظة</div>
+      <div class="opts">أ) أن تكون الكتلة ثابتة &nbsp;&nbsp; ب) أن تكون سرعته ثابتة &nbsp;&nbsp; <span class="circle">ج) أن تكون محصلة القوى الخارجية المؤثرة عليه تساوي صفراً</span> &nbsp;&nbsp; د) أن تكون الطاقة الحركية محفوظة</div>
     </div>
 
     <div class="q"><span class="q-num">8.</span> ما وحدة قياس التسارع الزاوي α حسب النظام الدولي؟
-      <div class="opts">أ) rad/s &nbsp;&nbsp; ب) m/s² &nbsp;&nbsp; ج) <mark>rad/s²</mark> &nbsp;&nbsp; د) rad.m</div>
+      <div class="opts">أ) rad/s &nbsp;&nbsp; ب) m/s² &nbsp;&nbsp; <span class="circle">ج) rad/s²</span> &nbsp;&nbsp; د) rad.m</div>
     </div>
 
     <div class="q"><span class="q-num">9.</span> ما الشرط اللازم لتحقق الاتزان الانتقالي لجسم ما؟
-      <div class="opts">أ) أن تكون محصلة العزوم تساوي صفراً (τ = 0) &nbsp;&nbsp; ب) <mark>أن تكون محصلة القوى تساوي صفراً (F = 0)</mark> &nbsp;&nbsp; ج) أن يكون الجسم في حالة حركة &nbsp;&nbsp; د) أن يكون مركز الكتلة خارج الجسم</div>
+      <div class="opts">أ) أن تكون محصلة العزوم تساوي صفراً (τ = 0) &nbsp;&nbsp; <span class="circle">ب) أن تكون محصلة القوى تساوي صفراً (F = 0)</span> &nbsp;&nbsp; ج) أن يكون الجسم في حالة حركة &nbsp;&nbsp; د) أن يكون مركز الكتلة خارج الجسم</div>
     </div>
 
     <div class="q"><span class="q-num">10.</span> يكون العزم أكبر ما يمكن عندما تكون الزاوية بين ذراع القوة ومنحه القوة تساوي:
-      <div class="opts">أ) 0° &nbsp;&nbsp; ب) 180° &nbsp;&nbsp; ج) <mark>90°</mark> &nbsp;&nbsp; د) 180°</div>
+      <div class="opts">أ) 0° &nbsp;&nbsp; ب) 180° &nbsp;&nbsp; <span class="circle">ج) 90°</span> &nbsp;&nbsp; د) 180°</div>
     </div>
 
     <div class="q"><span class="q-num">11.</span> كيف يتم حساب مقدار الدفع من خلال الرسم البياني لمنحنى (القوة - الزمن)؟
-      <div class="opts">أ) حساب ميل المنحنى &nbsp;&nbsp; ب) <mark>حساب المساحة تحت المنحنى</mark> &nbsp;&nbsp; ج) قسمة القوة على الزمن &nbsp;&nbsp; د) جمع قيم القوة والزمن</div>
+      <div class="opts">أ) حساب ميل المنحنى &nbsp;&nbsp; <span class="circle">ب) حساب المساحة تحت المنحنى</span> &nbsp;&nbsp; ج) قسمة القوة على الزمن &nbsp;&nbsp; د) جمع قيم القوة والزمن</div>
     </div>
 
     <div class="q"><span class="q-num">12.</span> ما العلاقة الرياضية الصحيحة التي تربط بين السرعة الخطية v والسرعة الزاوية المتجهة ω لنقطة تبعد مسافة r عن محور الدوران؟
-      <div class="opts">أ) v = r ω &nbsp;&nbsp; ب) v = ω r &nbsp;&nbsp; ج) <mark>v = r ω</mark> &nbsp;&nbsp; د) v = r + ω</div>
+      <div class="opts">أ) v = r ω &nbsp;&nbsp; ب) v = ω r &nbsp;&nbsp; <span class="circle">ج) v = r ω</span> &nbsp;&nbsp; د) v = r + ω</div>
     </div>
 
   </div>
@@ -97,41 +115,41 @@
     <div class="page-num">13</div>
 
     <div class="q"><span class="q-num">13.</span> إذا أكمل جسم دورة كاملة واحدة، فإن إزاحته الزاوية بوحدة الراديان تساوي:
-      <div class="opts">أ) π rad &nbsp;&nbsp; ب) <mark>2π rad</mark> &nbsp;&nbsp; ج) 360 rad &nbsp;&nbsp; د) 2π rad</div>
+      <div class="opts">أ) π rad &nbsp;&nbsp; <span class="circle">ب) 2π rad</span> &nbsp;&nbsp; ج) 360 rad &nbsp;&nbsp; د) 2π rad</div>
     </div>
 
     <div class="q"><span class="q-num">14.</span> وفقاً لنظرية الدفع - الزخم، فإن الدفع على جسم ما يساوي:
-      <div class="opts">أ) الزخم الابتدائي للجسم &nbsp;&nbsp; ب) التغير في زخم الجسم &nbsp;&nbsp; ج) <mark>التغير في زخم الجسم</mark> &nbsp;&nbsp; د) مجموع الزخمين الابتدائي والنهائي</div>
+      <div class="opts">أ) الزخم الابتدائي للجسم &nbsp;&nbsp; ب) التغير في زخم الجسم &nbsp;&nbsp; <span class="circle">ج) التغير في زخم الجسم</span> &nbsp;&nbsp; د) مجموع الزخمين الابتدائي والنهائي</div>
     </div>
 
     <div class="q"><span class="q-num">15.</span> ما وظيفة الوسائد الهوائية في السيارات بناءً على نظرية الدفع والزخم؟
-      <div class="opts">أ) زيادة القوة المؤثرة لتقليل الزمن &nbsp;&nbsp; ب) تقليل التغير في الزخم &nbsp;&nbsp; ج) <mark>توفير الدفع المطلوب وتقليل القوة عن طريق زيادة زمن تأثيرها</mark> &nbsp;&nbsp; د) إلغاء الدفع نهائياً</div>
+      <div class="opts">أ) زيادة القوة المؤثرة لتقليل الزمن &nbsp;&nbsp; ب) تقليل التغير في الزخم &nbsp;&nbsp; <span class="circle">ج) توفير الدفع المطلوب وتقليل القوة عن طريق زيادة زمن تأثيرها</span> &nbsp;&nbsp; د) إلغاء الدفع نهائياً</div>
     </div>
 
     <h2>السؤال 2: ضع علامة (✓) أو (X) أمام العبارات التالية:</h2>
     <table>
       <tr><th>#</th><th>العبارة</th><th>الإجابة</th></tr>
-      <tr><td class="num-col">1</td><td>يمكن حساب طول ذراع القوة L باستخدام المعادلة L = 2 θ</td><td class="ans-col"><mark>X</mark></td></tr>
-      <tr><td class="num-col">2</td><td>المجال الجاذبي هو كمية متجهة يكون اتجاهها دائماً في اتجاه مركز الكتلة المسببة للمجال.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">3</td><td>يعرف النظام المعزول بأنه النظام الذي تكون محصلة القوى الخارجية المؤثرة عليه تساوي صفراً.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">4</td><td>تسعى تجربة كافندش أحياناً "إيجاد كتلة الأرض" لأنها ساعدت في حسابها.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">5</td><td>ذراع القوة هي المسافة الأفقية دائماً بين نقطة التأثير ومحور الدوران.</td><td class="ans-col"><mark>X</mark></td></tr>
-      <tr><td class="num-col">6</td><td>للحصول على أكبر أثر عند فتح الباب بأقل قوة ممكنة، نؤثر في نقطة تكون أقرب ما يمكن لمحور الدوران.</td><td class="ans-col"><mark>X</mark></td></tr>
-      <tr><td class="num-col">7</td><td>السرعة المادية لقمر اصطناعي والزمن الدوري له مستقلان عن كتلة القمر الاصطناعي نفسه.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">8</td><td>تثبيت نظرية أينشتاين بانحراف الضوء عند مروره بالقرب من أجسام ذات كتل كبيرة جداً.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">9</td><td>في حالة اتزان جسم قابل للدوران، تكون محصلة العزوم المؤثرة فيه تساوي صفراً.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">10</td><td>وحدة قياس الزخم هي kg.m/s.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">11</td><td>إذا كانت القوة المؤثرة في جسم ثابتة، فإن الدفع يساوي حاصل ضرب القوة في الفترة الزمنية.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">12</td><td>ينطبق القانون الثالث لكبلر على الكواكب التي تدور حول الشمس فقط ولا ينطبق على الأقمار التي تدور حول الكواكب.</td><td class="ans-col"><mark>X</mark></td></tr>
-      <tr><td class="num-col">13</td><td>القوى الداخلية بين الأجسام داخل النظام المغلق والمعزول تغير من الزخم الكلي للنظام.</td><td class="ans-col"><mark>X</mark></td></tr>
-      <tr><td class="num-col">14</td><td>التسارع الزاوي يساوي التغير في السرعة الزاوية المتجهة مقسوماً على الفترة الزمنية التي حدث خلالها هذا التغير.</td><td class="ans-col"><mark>✓</mark></td></tr>
-      <tr><td class="num-col">15</td><td>استخدم تايكو براهي تلسكوباً دقيقاً لجمع بياناته حول مواقع الكواكب والنجوم.</td><td class="ans-col"><mark>X</mark></td></tr>
+      <tr><td class="num-col">1</td><td>يمكن حساب طول ذراع القوة L باستخدام المعادلة L = 2 θ</td><td class="ans-col">X</td></tr>
+      <tr><td class="num-col">2</td><td>المجال الجاذبي هو كمية متجهة يكون اتجاهها دائماً في اتجاه مركز الكتلة المسببة للمجال.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">3</td><td>يعرف النظام المعزول بأنه النظام الذي تكون محصلة القوى الخارجية المؤثرة عليه تساوي صفراً.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">4</td><td>تسعى تجربة كافندش أحياناً "إيجاد كتلة الأرض" لأنها ساعدت في حسابها.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">5</td><td>ذراع القوة هي المسافة الأفقية دائماً بين نقطة التأثير ومحور الدوران.</td><td class="ans-col">X</td></tr>
+      <tr><td class="num-col">6</td><td>للحصول على أكبر أثر عند فتح الباب بأقل قوة ممكنة، نؤثر في نقطة تكون أقرب ما يمكن لمحور الدوران.</td><td class="ans-col">X</td></tr>
+      <tr><td class="num-col">7</td><td>السرعة المادية لقمر اصطناعي والزمن الدوري له مستقلان عن كتلة القمر الاصطناعي نفسه.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">8</td><td>تثبيت نظرية أينشتاين بانحراف الضوء عند مروره بالقرب من أجسام ذات كتل كبيرة جداً.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">9</td><td>في حالة اتزان جسم قابل للدوران، تكون محصلة العزوم المؤثرة فيه تساوي صفراً.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">10</td><td>وحدة قياس الزخم هي kg.m/s.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">11</td><td>إذا كانت القوة المؤثرة في جسم ثابتة، فإن الدفع يساوي حاصل ضرب القوة في الفترة الزمنية.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">12</td><td>ينطبق القانون الثالث لكبلر على الكواكب التي تدور حول الشمس فقط ولا ينطبق على الأقمار التي تدور حول الكواكب.</td><td class="ans-col">X</td></tr>
+      <tr><td class="num-col">13</td><td>القوى الداخلية بين الأجسام داخل النظام المغلق والمعزول تغير من الزخم الكلي للنظام.</td><td class="ans-col">X</td></tr>
+      <tr><td class="num-col">14</td><td>التسارع الزاوي يساوي التغير في السرعة الزاوية المتجهة مقسوماً على الفترة الزمنية التي حدث خلالها هذا التغير.</td><td class="ans-col">✓</td></tr>
+      <tr><td class="num-col">15</td><td>استخدم تايكو براهي تلسكوباً دقيقاً لجمع بياناته حول مواقع الكواكب والنجوم.</td><td class="ans-col">X</td></tr>
     </table>
 
     <h2>السؤال 3: أكمل الفراغات التالية:</h2>
     <ol>
-      <li>النظام الذي لا يكتسب كتلة ولا يفقدها يسمى <mark>النظام المغلق</mark>.</li>
-      <li>الأجسام ذات الكثافة والكتلة الهائلة التي لا يستطيع الضوء الخروج منها تسمى <mark>الثقوب السوداء</mark>.</li>
+      <li>النظام الذي لا يكتسب كتلة ولا يفقدها يسمى <span class="box-answer">النظام المغلق</span>.</li>
+      <li>الأجسام ذات الكثافة والكتلة الهائلة التي لا يستطيع الضوء الخروج منها تسمى <span class="box-answer">الثقوب السوداء</span>.</li>
     </ol>
 
   </div>
@@ -143,19 +161,19 @@
     <div class="page-num">٣</div>
 
     <ol start="3">
-      <li>العلاقة التي تربط التسارع الخطي a بالتسارع الزاوي α ونصف القطر r هي <mark>a = r α</mark>.</li>
-      <li>شرط الاتزان الدوراني هو أن تكون <mark>محصلة العزوم</mark> تساوي صفراً.</li>
-      <li>نص مبدأ <mark>التكافؤ</mark> على أن كتلة القصور وكتلة الجاذبية متساويتان في المقدار.</li>
-      <li>يعبر عن الزخم رياضياً بالمعادلة <mark>p = m v</mark>.</li>
-      <li>لإيجاد ذراع القوة نمد خط متجه القوة حتى يشكل زاوية <mark>قائمة (90°)</mark> مع الخط الممتد من مركز الدوران.</li>
-      <li>تعمل الوسادة الهوائية على تقليل القوة المؤثرة في جسم الشخص عن طريق زيادة <mark>زمن</mark> تأثير القوة.</li>
-      <li>مدارات الكواكب حول الشمس تكون على شكل <mark>إهليلجي</mark>.</li>
-      <li>الدورة الكاملة تعادل بالراديان قيمة <mark>2</mark> مضروبة في π.</li>
-      <li>تنص نظرية الدفع - الزخم على أن الدفع على جسم ما يساوي <mark>التغير في الزخم</mark>.</li>
-      <li>يستخدم مسبار (Deep Space 1) ذرات غاز <mark>الزينون</mark> في محركه الأيوني.</li>
-      <li>عندما يرفع لاعب الجمباز ذراعيه ورجليه في الهواء، فإن مركز كتلته <mark>يرتفع</mark>.</li>
-      <li>القيمة التي توصل إليها كافندش للثابت G تساوي <mark>6.67 × 10⁻¹¹</mark> N · m²/kg².</li>
-      <li>إذا كانت القوة متعامدة مع نصف قطر الدوران، فإن ذراع القوة تساوي <mark>نصف القطر r</mark>.</li>
+      <li>العلاقة التي تربط التسارع الخطي a بالتسارع الزاوي α ونصف القطر r هي <span class="box-answer">a = r α</span>.</li>
+      <li>شرط الاتزان الدوراني هو أن تكون <span class="box-answer">محصلة العزوم</span> تساوي صفراً.</li>
+      <li>نص مبدأ <span class="box-answer">التكافؤ</span> على أن كتلة القصور وكتلة الجاذبية متساويتان في المقدار.</li>
+      <li>يعبر عن الزخم رياضياً بالمعادلة <span class="box-answer">p = m v</span>.</li>
+      <li>لإيجاد ذراع القوة نمد خط متجه القوة حتى يشكل زاوية <span class="box-answer">قائمة (90°)</span> مع الخط الممتد من مركز الدوران.</li>
+      <li>تعمل الوسادة الهوائية على تقليل القوة المؤثرة في جسم الشخص عن طريق زيادة <span class="box-answer">زمن</span> تأثير القوة.</li>
+      <li>مدارات الكواكب حول الشمس تكون على شكل <span class="box-answer">إهليلجي</span>.</li>
+      <li>الدورة الكاملة تعادل بالراديان قيمة <span class="box-answer">2</span> مضروبة في π.</li>
+      <li>تنص نظرية الدفع - الزخم على أن الدفع على جسم ما يساوي <span class="box-answer">التغير في الزخم</span>.</li>
+      <li>يستخدم مسبار (Deep Space 1) ذرات غاز <span class="box-answer">الزينون</span> في محركه الأيوني.</li>
+      <li>عندما يرفع لاعب الجمباز ذراعيه ورجليه في الهواء، فإن مركز كتلته <span class="box-answer">يرتفع</span>.</li>
+      <li>القيمة التي توصل إليها كافندش للثابت G تساوي <span class="box-answer">6.67 × 10⁻¹¹</span> N · m²/kg².</li>
+      <li>إذا كانت القوة متعامدة مع نصف قطر الدوران، فإن ذراع القوة تساوي <span class="box-answer">نصف القطر r</span>.</li>
     </ol>
 
     <h2>السؤال 4: أجب عن الأسئلة التالية:</h2>
@@ -166,26 +184,26 @@
       <p class="formula">F = 6.67 × 10⁻¹¹ × (15 × 15) / (0.35)²</p>
       <p class="formula">F = 6.67 × 10⁻¹¹ × 225 / 0.1225</p>
       <p class="formula">F ≈ 1.22 × 10⁻⁷ N</p>
-      <p>الإجابة: قوة الجاذبية بين الجسمين تساوي تقريباً <mark>1.22 × 10⁻⁷ نيوتن</mark>.</p>
+      <p>الإجابة: قوة الجاذبية بين الجسمين تساوي تقريباً <span class="box-answer">1.22 × 10⁻⁷ نيوتن</span>.</p>
     </div>
 
     <div class="box">
       <div class="box-title">2) إذا تطلب تدوير جسم عزمًا مقداره 55 N.m، في حين كانت أكبر قوة يمكن التأثير بها 135 N، فما طول ذراع القوة الذي يجب استخدامه؟</div>
       <p class="formula">τ = F × r</p>
       <p class="formula">r = τ / F = 55 / 135 ≈ 0.407 m</p>
-      <p>الإجابة: طول ذراع القوة ≈ <mark>0.407 متر</mark> (أي حوالي 40.7 سم).</p>
+      <p>الإجابة: طول ذراع القوة ≈ <span class="box-answer">0.407 متر</span> (أي حوالي 40.7 سم).</p>
     </div>
 
     <div class="box">
       <div class="box-title">3) كيف يتم تحديد إشارة الإزاحة الزاوية (موجبة أم سالبة)؟</div>
-      <p>يتم تحديد إشارة الإزاحة الزاوية حسب <mark>اتجاه الدوران</mark>؛ فإذا كان الدوران <mark>عكس عقارب الساعة</mark> تكون الإزاحة الزاوية <mark>موجبة</mark>، وإذا كان الدوران <mark>مع عقارب الساعة</mark> تكون الإزاحة الزاوية <mark>سالبة</mark>.</p>
+      <p>يتم تحديد إشارة الإزاحة الزاوية حسب <span class="box-answer">اتجاه الدوران</span>؛ فإذا كان الدوران <span class="box-answer">عكس عقارب الساعة</span> تكون الإزاحة الزاوية <span class="box-answer">موجبة</span>، وإذا كان الدوران <span class="box-answer">مع عقارب الساعة</span> تكون الإزاحة الزاوية <span class="box-answer">سالبة</span>.</p>
     </div>
 
     <div class="box">
       <div class="box-title">4) تتحرك سيارة صغيرة كتلتها 725 kg بسرعة 31.9 m/s في اتجاه الغرب، احسب مقدار زخمها وحدد اتجاهه.</div>
       <p class="formula">p = m v</p>
       <p class="formula">p = 725 × 31.9 = 23127.5 kg·m/s</p>
-      <p>الإجابة: مقدار الزخم = <mark>23127.5 kg·m/s</mark>، واتجاهه <mark>نحو الغرب</mark> (في نفس اتجاه حركة السيارة).</p>
+      <p>الإجابة: مقدار الزخم = <span class="box-answer">23127.5 kg·m/s</span>، واتجاهه <span class="box-answer">نحو الغرب</span> (في نفس اتجاه حركة السيارة).</p>
     </div>
 
   </div>
